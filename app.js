@@ -1,22 +1,22 @@
-for (let i1 = 0;i1 < 101; i1++) {
+let i=1;
 
-    let multiFive = 5;
-    let multithree = 3;
+while (i <= 100) {
 
-    if ((i1 % multithree) === 0) {
-        console.log(i1  +  " fizz " );
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        console.log(i + "=> FizzBuzz");
     }
 
-    else if ((i1 % multiFive) === 0){
-        console.log(i1 + " buzz " );
+    else if (i % 3 === 0) {
+        console.log(i + "=> Fizz");
     }
 
-    if (i1 % multithree && i1 % multiFive === 0) {
-        console.log(i1 + " fizzbuzz " );
+    else if (i % 5 === 0) {
+        console.log(i + "=> Buzz");
     }
 
-    else{
-        console.log(i1 + "n'est pas un multiple de " + ' ' + multithree + ' '+ "ou" + ' ' +
-            multiFive + ' '+"le nombre est"+' ' + i1 );
+    else {
+        console.log(i);
     }
+    i++;
+
 }
